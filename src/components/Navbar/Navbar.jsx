@@ -6,6 +6,16 @@ export default function Navbar() {
         <div className={s.AppNavbar}>
             <nav className={s.AppNavbarMenu}>
                 <ul className={s.AppNavbarList}>
+                    <div
+                        style={{
+                            fontSize: '25px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            paddingBottom: '20px',
+                        }}
+                    >
+                        React Hooks :
+                    </div>
                     <NavLink
                         className={(navData) =>
                             navData.isActive
@@ -26,7 +36,7 @@ export default function Navbar() {
                     >
                         useEffect()
                     </NavLink>
-                    {/* <NavLink
+                    <NavLink
                         className={(navData) =>
                             navData.isActive
                                 ? `${s.AppNavbarLinkActive}`
@@ -35,7 +45,7 @@ export default function Navbar() {
                         to="/use-context"
                     >
                         useContext()
-                    </NavLink> */}
+                    </NavLink>
                     <NavLink
                         className={(navData) =>
                             navData.isActive
@@ -156,6 +166,17 @@ export default function Navbar() {
                     >
                         useInsertionEffect()
                     </NavLink>
+                    <div
+                        style={{
+                            fontSize: '25px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            padding: '20px 0px',
+                        }}
+                    >
+                        React Documentation :
+                    </div>
+                    
                 </ul>
             </nav>
         </div>

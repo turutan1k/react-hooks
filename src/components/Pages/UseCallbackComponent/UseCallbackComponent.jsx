@@ -2,10 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import s from './../Content/Content.module.scss';
 
 export default function UseCallbackComponent() {
-    const [
-        message,
-        // setMessage
-    ] = useState('Message');
+    const [message, setMessage] = useState('Message');
     const [counter, setCounter] = useState(0);
     const greeting = useCallback((text) => {
         console.log(text);

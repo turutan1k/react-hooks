@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import s from './Content.module.scss';
 import UseEffectComponent from './../UseEffectComponent/UseEffectComponent';
-// import UseContextComponent from './../UseContextComponent/UseContextComponent';
+import UseContextComponent from './../UseContextComponent/UseContextComponent';
 import UseReducerComponent from './../UseReducerComponent/UseReducerComponent';
 import UseCallbackComponent from './../UseCallbackComponent/UseCallbackComponent';
 import UseMemoComponent from './../UseMemoComponent/UseMemoComponent';
@@ -24,7 +24,7 @@ export default function Content() {
                 <Route index element={<UseStateComponent />} />
                 <Route path="use-state" element={<UseStateComponent />} />
                 <Route path="use-effect" element={<UseEffectComponent />} />
-                {/* <Route path="use-context" element={<UseContextComponent />} /> */}
+                <Route path="use-context" element={<UseContextComponent />} />
                 <Route path="use-reducer" element={<UseReducerComponent />} />
                 <Route path="use-callback" element={<UseCallbackComponent />} />
                 <Route path="use-memo" element={<UseMemoComponent />} />
