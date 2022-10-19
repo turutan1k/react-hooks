@@ -1,8 +1,12 @@
 .Content {
     &Wrapper {
         display: flex;
+        // flex-direction: column;
+    }
+    &Align {
+        display: flex;
         flex-direction: column;
-        padding: 30px;
+        align-items: center;
     }
     &Header {
         display: flex;
